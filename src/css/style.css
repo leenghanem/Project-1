@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    src: url(../fonts/AlegreyaSansSC-Bold.ttf);
+}
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.container-fluid{
+    width: 100%; 
+}
+.navbar{
+    position: fixed;
+    background-color: rgba(138, 9, 9,0.5);
+    z-index: 1;
+}
+.navbar{
+    color: #c8102e;
+    font-weight: bolder;
+}
+.navbar .title{
+    color: yellow;
+    font-weight: bolder;
+}
+.navbar-nav{
+    position: absolute;
+    right: 30px;
+}
+.navbar-nav li a{
+    color: white;
+}
+nav.navbar button.navbar-toggler{
+    margin: 30px auto;
+}
+nav.navbar button.navbar-toggler-icon{
+   background-color: #c8102e;
+}
+nav .navbar-nav{
+right: 30px;
+}
+
+.carousel{
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .carousel-indicators li{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 20px 5px 0px 0px;
+}
+.carousel .carousel-item img{
+    height: 450px;
+}
+.carousel .carousel-caption h2{
+    text-align: center;
+    text-shadow: 0 0 20px #fff, 0 0 30px #c8102e, 0 0 40px #c8102e, 0 0 50px #c8102e, 0 0 60px #c8102e, 0 0 70px #c8102e, 0 0 80px #c8102e;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: #c8102e;
+    margin-bottom: 0%;
+}
+.content .card{
+    margin-top: 30px;
+    margin-bottom: 0%;
+}
+.content .card h4{
+    color: black;
+    text-align: center;
+}
+.carousel-2 .overlay{
+    background-color: rgb(247, 233, 194);
+}
+#footer-nav {
+    margin-top: 0%;
+    background-color: #1f1e1e;
+}
+#footer-nav-links {
+    margin: 30px 0;
+}
+
+#footer-nav-links a {
+    color: #555555;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#footer-nav-links a:hover {
+    text-decoration: none;
+}
+#footer-copyright-social {
+    background-color: #151515;
+    color: #303030;
+    padding-top: 30px;
+	padding-bottom: 30px;
+	font-weight: 700;
+}
+
+#footer-copyright-social a {
+    color: #303030;
+    margin-left: 5px;
+	margin-right: 5px
+}
+.about img{
+    width:100%;
+    height: 450px;
+}
