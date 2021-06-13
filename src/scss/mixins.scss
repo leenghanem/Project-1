@@ -1,0 +1,21 @@
+@mixin navbar ($na){
+    width: 100%;
+    position: fixed;
+    background-color: $na;
+    z-index: 1 !important;
+    color: #c8102e;
+  }
+  @mixin h1 ($hh) {
+    text-align: center;
+    color: white;
+    background-color: $hh;
+    margin-bottom: 0%;
+  }
+ @mixin footer ($fn) {
+    margin-top: 0%;
+    background-color: $fn;
+  }
+  @mixin h3 ($hhh){
+    color: $hhh;
+    text-align: center;
+  }
