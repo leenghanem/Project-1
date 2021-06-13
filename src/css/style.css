@@ -5,39 +5,34 @@
 body{
     font-family:  'Amiri', serif;
 }
-.container-fluid{
-    width: 100%; 
-}
-.navbar{
+.top-menu .navbar{
+    width: 100%;
     position: fixed;
     background-color: rgba(138, 9, 9,0.5);
     z-index: 1;
-}
-.navbar{
     color: #c8102e;
-    font-weight: bolder;
 }
-.navbar .title{
+.top-menu .navbar .navbar-brand{
+    margin: left;
+   
+}
+.top-menu .navbar .title{
     color: yellow;
-    font-weight: bolder;
 }
-.navbar-nav{
-    position: absolute;
-    right: 30px;
-}
-.navbar-nav li a{
+.top-menu .navbar-nav li a{
     color: white;
 }
-nav.navbar button.navbar-toggler{
-    margin: 30px auto;
+.top-menu .navbar-nav li a:hover{
+    color: yellow;
 }
-nav.navbar button.navbar-toggler-icon{
-   background-color: #c8102e;
+.top-menu .navbar-nav li a:active{
+    color: #c8102e;
 }
-nav .navbar-nav{
-right: 30px;
+.navbar-toggler{
+    color: yellow !important;
+    border: yellow !important;
+    background-color: white !important;
 }
-
 .carousel{
     display: flex !important;
     flex-flow: column;
@@ -198,3 +193,4 @@ color: yellow;
     font-size: 18px;
 	margin-bottom: 5px;
 }
+

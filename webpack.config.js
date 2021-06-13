@@ -105,8 +105,16 @@ module.exports = {
             template: "./src/privacy.html",
           }),
           new HtmlWebpackPlugin({
-            filename: "specials.html",
-            template: "./src/specials.html",
+            filename: "margherita.html",
+            template: "./src/margherita.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "veggie.html",
+            template: "./src/veggie.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "chicken.html",
+            template: "./src/chicken.html",
           }),
 
           new MiniCssExtractPlugin({filename: "css/style.css"}),
