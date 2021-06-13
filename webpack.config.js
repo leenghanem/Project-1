@@ -25,21 +25,19 @@ module.exports = {
 
       module: {
         rules: [
+    
           {
-            test: /\.html$/,
-            use: [
-            {
-            loader: 'html-loader',
+            test: require.resolve('jquery'),
+            loader: 'expose-loader',
             options: {
-                minimize: true,
-            },
-            },
-           ],
+              exposes: ['$', 'jQuery'],
+            }
           },
+    
           {
-            test: /\.css$/,
+            test: /\.(sa|sc|c)ss$/,
             use: [
-                {
+                  {
                     loader: MiniCssExtractPlugin.loader, 
                     options: {
                       publicPath: '../' 
@@ -47,20 +45,22 @@ module.exports = {
                   },
                   'css-loader',
                   'sass-loader'
-                ],
+                ]
           },
+          
           {
             test: /\.(png|svg|jpe?g|gif)$/,
-            use:[
+            use: [
               {
-                loader:"file-loader",
+                loader: "file-loader", 
                 options: {
-                  name: "[name].[ext]",
+                  name: '[name].[ext]',
                   outputPath: "images",
                 }
               }
-            ],
+            ]
           },
+    
           {
             test: /\.(svg|eot|woff|woff2|ttf)$/,
             use: [
@@ -74,10 +74,20 @@ module.exports = {
               }
             ]
           },
-        ],
+    
+          {
+            test: /\.html$/,
+            use: [
+              {
+                loader: "html-loader",
+                // options: {
+                //   minimize: true,
+                // }
+              }
+            ]
+          }
+        ]
       },
-
-      
 
       plugins: [
           new HtmlWebpackPlugin({
