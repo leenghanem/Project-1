@@ -19,6 +19,7 @@ body {
 }
 
 .top-menu .navbar .title {
+  margin-right: 50px;
   color: yellow;
 }
 
@@ -244,5 +245,10 @@ form:before {
   font-size: 18px;
   margin-bottom: 5px;
 }
-
+@media (min-width:51px)and(max-width:315px){
+  #pizza{
+    position: relative;
+    width: 320px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
