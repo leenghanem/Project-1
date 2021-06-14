@@ -1,8 +1,0 @@
-@import './variable.scss';
-@import './mixins.scss';
-.top-menu .navbar .mar{
-    @include navbar($na,$mar) 
-}
-h1 .mar{
-    @include h1($hh,$mar)
-}
