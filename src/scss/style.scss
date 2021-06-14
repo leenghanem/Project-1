@@ -188,6 +188,9 @@ p .desc{
 .dropdown .dropdown-item{
     display: inline;
 }
+.dropdown .dropdown-item:active{
+    background-color:$main-color;
+  }
 .menu1{
     color: $color2;
     text-align: center;

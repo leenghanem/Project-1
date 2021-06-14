@@ -172,7 +172,9 @@ p .desc {
 .dropdown .dropdown-item {
   display: inline;
 }
-
+.dropdown .dropdown-item:active{
+  background-color:#c8102e;
+}
 .menu1 {
   color: black;
   text-align: center;
