@@ -126,6 +126,10 @@ module.exports = {
             filename: "chicken.html",
             template: "./src/chicken.html",
           }),
+          new HtmlWebpackPlugin({
+            filename: "pay.html",
+            template: "./src/pay.html",
+          }),
 
           new MiniCssExtractPlugin({filename: "css/style.css"}),
 

@@ -3,7 +3,12 @@ import './scss/style.scss';
 import './css/style.css';
 import '@fortawesome/fontawesome-free/js/all.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
+import 'jquery/dist/jquery.slim.min.js';
+import 'jquery/dist/jquery.min';
 import 'jquery/dist/jquery.min.js';
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
 import 'popper.js/dist/popper.min';
 
 console.log('hi');
@@ -139,3 +144,11 @@ let pizza = new Pizza('pizza')
   pizza.update()
 
 }())
+
+$$(document).ready(function() {
+  $(".nav-item").click(function() {
+    $(".nav-item").removeClass("active");
+    $(this).addClass("active");
+});
+
+});

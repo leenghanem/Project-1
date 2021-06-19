@@ -24,11 +24,6 @@ body{
     @include navbar ($veg)
 }
 
-
-.top-menu .navbar .navbar-brand{
-    margin: left;
-   
-} 
 .top-menu .navbar .title{
     color: $major-color;
 }
@@ -41,6 +36,10 @@ body{
 .top-menu .navbar-nav li a:active{
     color: $main-color;
 }
+.top-menu .navbar-nav li a:active:hover{
+    color:$main-color ;
+    background-color: $color1;
+  }
 .navbar-toggler{
     color: $major-color !important;
     border: $major-color !important;
@@ -220,7 +219,6 @@ form:before {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color:$back1;
     z-index: -1;
     border-radius: 10px;
 }
@@ -255,3 +253,15 @@ color: $major-color;
     font-size: 18px;
 	margin-bottom: 5px;
 }
+.pay img{
+    width: 100%;
+    height: 400px;
+  }
+  #form-checkout{
+    margin: auto;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:$back1;
+    z-index: -1;
+  }
